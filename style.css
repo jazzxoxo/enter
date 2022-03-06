@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(40, 73, 218);
+    color: rgb(192, 112, 20);
+  }
+
+a {
+    color: rgb(192, 112, 20)
+}
+header > div {
+    display: inline !important;
+    right: 0;
+    float: right;
+    vertical-align: bottom;
+    bottom: 0%;
+    position: absolute;
+}
+
+header > div > a {
+    padding-left: 1em;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    right: 20%;
+    text-decoration: none;
+}
+
+header > a {
+    float: left;
+    font-size: 4em;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    margin: 0 auto;
+    display: inline-block !important;
+    position: fixed;
+    width: 50%;
+    z-index: 1;
+    padding-left: 20%;
+    padding-right: 10%;
+}
+
+header.hide {
+    visibility: hidden;
+}
+
+header > a:hover, header > div > a:hover {
+    color: white;
+}
+
+.core {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+body {
+    padding-top: 1%;
+    margin: 0;
+}
+
+.land {
+    background-image: url("img/land.jpg");
+    height: 80%;
+    top: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.land > div {
+    position:absolute; 
+    width: auto;
+    height: auto;
+    bottom:10%;
+}
+
+.button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    color: rgb(192, 112, 20);
+    background-color: rgb(40, 73, 218);
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(34, 42, 68);
+    bottom: 0;
+    width: 100%;
+    margin: 0 px;
+    position: relative;
+    overflow: hidden
+}

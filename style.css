@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(40, 73, 218);
+    color: rgb(192, 112, 20);
+  }
+
+a {
+    color: rgb(192, 112, 20)
+}
+
 /* width */
 ::-webkit-scrollbar {
-    width: 0.05em;
+    width: 3px;
 
 
   }
@@ -22,16 +32,6 @@
   ::-webkit-scrollbar-thumb:hover {
     background:white; 
   }
-
-html {
-    scroll-behavior: smooth;
-    background-color: rgb(40, 73, 218);
-    color: rgb(192, 112, 20);
-  }
-
-a {
-    color: rgb(192, 112, 20)
-}
 header > div {
     display: inline !important;
     right: 0;
@@ -43,7 +43,7 @@ header > div {
 
 header > div > a {
     padding-left: 1em;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Quicksand', sans-serif;
     right: 20%;
     text-decoration: none;
@@ -51,7 +51,7 @@ header > div > a {
 
 header > a {
     float: left;
-    font-size: 2.5em;
+    font-size: 4em;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
 }
@@ -92,6 +92,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .land > div {
@@ -109,15 +111,14 @@ body {
     border-radius: 12px;
 }
 
+.button:hover {
+    color: rgb(40, 73, 218);
+    background-color: rgb(192, 112, 20);
+}
+
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 3em;
-    text-align: center;
-}
-
-h2 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2em;
     text-align: center;
 }
 
@@ -135,14 +136,3 @@ footer {
     position: relative;
     overflow: hidden
 }
-
-.column {
-    width:33%;
-    float:left;
-    }
-
-.pic {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;}

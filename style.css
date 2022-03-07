@@ -122,6 +122,38 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(34, 42, 68);
+    bottom: 0;
+    width: 100%;
+    margin: 0 px;
+    position: relative;
+    overflow: hidden
+}
+
+.column {
+    width:33%;
+    float:left;
+    }
+
+.pic {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
 p {
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;

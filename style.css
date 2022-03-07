@@ -20,7 +20,7 @@ header > div {
 
 header > div > a {
     padding-left: 1em;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Quicksand', sans-serif;
     right: 20%;
     text-decoration: none;
@@ -28,7 +28,7 @@ header > div > a {
 
 header > a {
     float: left;
-    font-size: 4em;
+    font-size: 2.5em;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
 }
@@ -92,6 +92,12 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
 p {
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
@@ -106,3 +112,14 @@ footer {
     position: relative;
     overflow: hidden
 }
+
+.column {
+    width:33%;
+    float:left;
+    }
+
+.pic {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}

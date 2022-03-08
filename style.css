@@ -43,7 +43,7 @@ header > div {
 
 header > div > a {
     padding-left: 1em;
-    font-size: 2em;
+    font-size: 24px;
     font-family: 'Quicksand', sans-serif;
     right: 20%;
     text-decoration: none;
@@ -51,8 +51,9 @@ header > div > a {
 
 header > a {
     float: left;
-    font-size: 4em;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-decoration: none;
 }
 

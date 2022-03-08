@@ -1,18 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-html {
-    scroll-behavior: smooth;
-    background-color: rgb(40, 73, 218);
-    color: rgb(192, 112, 20);
-  }
-
-a {
-    color: rgb(192, 112, 20)
-}
-
 /* width */
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 0.05em;
 
 
   }
@@ -24,7 +14,7 @@ a {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background:  rgb(192, 112, 20);
+    background:  #F3A712;
     border-radius: 0.5em;
   }
   
@@ -32,6 +22,17 @@ a {
   ::-webkit-scrollbar-thumb:hover {
     background:white; 
   }
+
+html {
+    scroll-behavior: smooth;
+    background-color: #5536AB;
+    color: #F3A712;
+  }
+
+a {
+    color: #fff
+}
+
 header > div {
     display: inline !important;
     right: 0;
@@ -43,7 +44,7 @@ header > div {
 
 header > div > a {
     padding-left: 1em;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: 'Quicksand', sans-serif;
     right: 20%;
     text-decoration: none;
@@ -51,10 +52,10 @@ header > div > a {
 
 header > a {
     float: left;
-    font-size: 32px;
-    /*font-family: 'Quicksand', sans-serif;*/
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 2.5em;
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
+    padding-left: 20%;
 }
 
 header {
@@ -63,8 +64,7 @@ header {
     position: fixed;
     width: 50%;
     z-index: 1;
-    padding-left: 20%;
-    padding-right: 10%;
+    text-shadow: 1px 1px 3px #3E277C
 }
 
 header.hide {
@@ -72,7 +72,7 @@ header.hide {
 }
 
 header > a:hover, header > div > a:hover {
-    color: white;
+    color: #F3A712;
 }
 
 .core {
@@ -93,8 +93,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .land > div {
@@ -105,17 +103,93 @@ body {
 }
 
 .button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.5em;
-    color: rgb(192, 112, 20);
-    background-color: rgb(40, 73, 218);
-    border-radius: 12px;
+    color: #F3A712;
 }
 
-.button:hover {
-    color: rgb(40, 73, 218);
-    background-color: rgb(192, 112, 20);
-}
+button.button {
+    width: 12rem;
+    height: auto;
+   }
+
+button.button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #F3A712;
+    border-radius: 1.625rem;
+   }
+   
+button.button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+
+button.button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+button.button .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+button.button .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+button:hover .circle {
+    width: 100%;
+   }
+   
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+button:hover .button-text {
+    color: #fff;
+   }
 
 h1 {
     font-family: 'Quicksand', sans-serif;
@@ -154,18 +228,3 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;}
-
-p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2em;
-    text-align: center;
-}
-
-footer {
-    background-color: rgb(34, 42, 68);
-    bottom: 0;
-    width: 100%;
-    margin: 0 px;
-    position: relative;
-    overflow: hidden
-}

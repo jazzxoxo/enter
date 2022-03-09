@@ -1,24 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-/* width */
 ::-webkit-scrollbar {
     width: 0.05em;
-
-
   }
-  
-  /* Track */
+
   ::-webkit-scrollbar-track { 
     border-radius: 40%;
   }
-   
-  /* Handle */
+ 
   ::-webkit-scrollbar-thumb {
     background:  #F3A712;
     border-radius: 0.5em;
   }
   
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background:white; 
   }
@@ -33,6 +27,13 @@ a {
     color: #fff
 }
 
+style>
+  html {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+</style>
+
 header > div {
     display: inline !important;
     right: 0;
@@ -44,6 +45,7 @@ header > div {
 
 header > div > a {
     padding-left: 1em;
+    padding-right: 1em;
     font-size: 1.5em;
     font-family: 'Quicksand', sans-serif;
     right: 20%;
@@ -55,20 +57,14 @@ header > a {
     font-size: 2.5em;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
-    padding-left: 20%;
 }
 
 header {
-    margin: 0 auto;
+    margin: 0px;
     display: inline-block !important;
-    position: fixed;
-    width: 50%;
-    z-index: 1;
-    text-shadow: 1px 1px 3px #3E277C
-}
-
-header.hide {
-    visibility: hidden;
+    padding-left: 5%;
+    padding-top: 1%;
+    text-shadow: 1px 1px 3px #3E277C;
 }
 
 header > a:hover, header > div > a:hover {

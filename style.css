@@ -24,26 +24,34 @@ html {
   }
 
 a {
-    color: #fff
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+    text-decoration: none;
 }
 
-style>
   html {
     overflow-y: auto;
     overflow-x: hidden;
   }
-</style>
+
+menu.a{
+    font-family: 'Quicksand', sans-serif;
+
+
+}
 
 header > div {
     display: inline !important;
-    right: 0;
+    right: 10%;
     float: right;
     vertical-align: bottom;
     bottom: 0%;
     position: absolute;
 }
 
-header > div > a {
+header > a {
     padding-left: 1em;
     padding-right: 1em;
     font-size: 1.5em;
@@ -65,6 +73,8 @@ header {
     padding-left: 5%;
     padding-top: 1%;
     text-shadow: 1px 1px 3px #3E277C;
+    width: 100%;
+    align-items: center;
 }
 
 header > a:hover, header > div > a:hover {
